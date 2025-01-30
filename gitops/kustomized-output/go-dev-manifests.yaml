@@ -1,4 +1,4 @@
-# git commit: 0f7c17f57fd951d6c1c3d2e1e6058205645addf5
+# git commit: d0e0be15797b29349ca1257505ca566b85403c95
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -8,11 +8,11 @@ apiVersion: v1
 data:
   CLUSTER: dev-cluster
   CLUSTER_IMAGE: dev
-  IMAGE: quay.io/rajkumar/go-argocd-workshop:dev-0f7c17f57fd951d6c1c3d2e1e6058205645addf5
+  IMAGE: quay.io/rajkumar/go-argocd-workshop:dev-d0e0be15797b29349ca1257505ca566b85403c95
   PORT: "8080"
 kind: ConfigMap
 metadata:
-  name: app-envs-gk72799f9c
+  name: app-envs-th4f45bg7c
   namespace: dev-go
 ---
 apiVersion: v1
@@ -58,8 +58,8 @@ spec:
       containers:
       - envFrom:
         - configMapRef:
-            name: app-envs-gk72799f9c
-        image: quay.io/rajkumar/go-argocd-workshop:dev-0f7c17f57fd951d6c1c3d2e1e6058205645addf5
+            name: app-envs-th4f45bg7c
+        image: quay.io/rajkumar/go-argocd-workshop:dev-d0e0be15797b29349ca1257505ca566b85403c95
         livenessProbe:
           httpGet:
             path: /go/health
