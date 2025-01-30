@@ -10,4 +10,4 @@ spec:
     spec:
       containers:
         - name: go-webapp-container
-          image: quay.io/rajkumar/go-argocd-workshop:prod-ba24bad3bf2b43f3b3e3f25fedbdfeccb10bee0e
+          image: quay.io/rajkumar/go-argocd-workshop:prod-0f7c17f57fd951d6c1c3d2e1e6058205645addf5
